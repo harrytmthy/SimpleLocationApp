@@ -22,6 +22,10 @@ class LocalLocationEntityData @Inject constructor(
         return Observable.just(preferences.getString(KEY_LOCATION, ""))
     }
 
+    override fun saveLocation(latLong: String) {
+        preferences.edit().putString(KEY_LOCATION, latLong).apply()
+    }
+
     companion object {
         const val KEY_LOCATION = "location_key"
     }

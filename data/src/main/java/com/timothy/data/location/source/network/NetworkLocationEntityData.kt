@@ -61,6 +61,10 @@ class NetworkLocationEntityData @Inject constructor(
             Looper.getMainLooper())
     }
 
+    override fun saveLocation(latLong: String) {
+        TODO("Not yet implemented")
+    }
+
     companion object {
         const val LOCATION_REQUEST_INTERVAL = 8000L
         const val LOCATION_REQUEST_FASTEST_INTERVAL = 4000L

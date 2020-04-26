@@ -8,4 +8,5 @@ import io.reactivex.Observable
  */
 interface LocationEntityData {
     fun getLocation(): Observable<String>
+    fun saveLocation(latLong: String)
 }
