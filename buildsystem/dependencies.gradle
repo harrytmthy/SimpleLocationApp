@@ -87,6 +87,7 @@ ext {
     ]
 
     domainDependencies = [
+            [configuration: "implementation", dependency: dependencyInjectionLibs.daggerCore],
             [configuration: "implementation", dependency: dependencyInjectionLibs.javax],
             [configuration: "implementation", dependency: reactiveXLibs.rxJava],
             [configuration: "testImplementation", dependency: testLibs.junit],
