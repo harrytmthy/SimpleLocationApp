@@ -1,6 +1,7 @@
 package com.timothy.data.location.source.network
 
 import android.content.Context
+import android.location.Location
 import android.os.Looper
 import com.google.android.gms.location.LocationCallback
 import com.google.android.gms.location.LocationRequest
@@ -13,7 +14,6 @@ import io.reactivex.disposables.Disposable
 import io.reactivex.subjects.PublishSubject
 import javax.inject.Inject
 import javax.inject.Singleton
-
 
 /**
  * @author Harry Timothy (harry.timothy@dana.id)
@@ -36,7 +36,7 @@ class NetworkLocationEntityData @Inject constructor(
             override fun onLocationResult(locationResult: LocationResult?) {
                 locationResult?.locations?.let { locations ->
                     if (locations.isNotEmpty()) {
-                        val location = locations.last() // get the newest location
+                        val location: Location = locations.last() // the newest location
                         val latLong = "${location.latitude}, ${location.longitude}"
                         launch {
                             Observable.just(latLong).subscribe(locationSubject::onNext)

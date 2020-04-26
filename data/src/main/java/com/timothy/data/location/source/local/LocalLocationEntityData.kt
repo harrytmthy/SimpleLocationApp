@@ -7,7 +7,6 @@ import io.reactivex.Observable
 import javax.inject.Inject
 import javax.inject.Singleton
 
-
 /**
  * @author Harry Timothy (harry.timothy@dana.id)
  * @version LocalLocationEntityData, v 0.1 26/04/20 23.01 by Harry Timothy
