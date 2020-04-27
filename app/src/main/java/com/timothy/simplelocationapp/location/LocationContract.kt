@@ -1,6 +1,5 @@
 package com.timothy.simplelocationapp.location
 
-
 /**
  * @author Harry Timothy (harry.timothy@dana.id)
  * @version LocationContract, v 0.1 27/04/20 01.04 by Harry Timothy

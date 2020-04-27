@@ -3,8 +3,8 @@ package com.timothy.simplelocationapp.location
 import com.timothy.domain.location.interactor.GetLocationUpdates
 import com.timothy.simplelocationapp.di.PerActivity
 import io.reactivex.observers.DisposableObserver
+import timber.log.Timber
 import javax.inject.Inject
-
 
 /**
  * @author Harry Timothy (harry.timothy@dana.id)
@@ -24,10 +24,11 @@ class LocationPresenter @Inject constructor(
 
             override fun onError(e: Throwable) {
                 view.onLocationUpdateError()
+                Timber.e(e)
             }
 
             override fun onComplete() {
-                // log or do anything
+                // optional: log or do anything
             }
         }, Unit)
     }
