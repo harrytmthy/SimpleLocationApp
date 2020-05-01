@@ -20,6 +20,7 @@ ext {
 
     // ReactiveX Libraries
     rxJavaVersion = '2.2.10'
+    rxAndroidVersion = '2.1.1'
 
     // Testing Libraries
     jUnitVersion = '4.12'
@@ -53,7 +54,8 @@ ext {
     ]
 
     def reactiveXLibs = [
-            rxJava:             [group: 'io.reactivex.rxjava2', name: 'rxjava', version: rxJavaVersion]
+            rxJava:             [group: 'io.reactivex.rxjava2', name: 'rxjava', version: rxJavaVersion],
+            rxAndroid:          [group: 'io.reactivex.rxjava2', name: 'rxandroid', version: rxAndroidVersion]
     ]
 
     def testLibs = [
@@ -73,6 +75,7 @@ ext {
             [configuration: "kapt", dependency: dependencyInjectionLibs.daggerProcessor],
             [configuration: "implementation", dependency: loggingLibs.timber],
             [configuration: "implementation", dependency: reactiveXLibs.rxJava],
+            [configuration: "implementation", dependency: reactiveXLibs.rxAndroid],
             [configuration: "testImplementation", dependency: testLibs.junit],
             [configuration: "testImplementation", dependency: testLibs.mockito]
     ]
