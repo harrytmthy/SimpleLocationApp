@@ -23,7 +23,7 @@ class LocationPresenter @Inject constructor(
             }
 
             override fun onError(e: Throwable) {
-                view.onLocationUpdateError()
+                view.onLocationUpdateError(e.message.orEmpty())
                 Timber.e(e)
             }
 

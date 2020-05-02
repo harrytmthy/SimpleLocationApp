@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SimpleLocationApp</string>
+    <string name="location_result_text">Latest Location: %1$s</string>
+    <string name="location_error_text">Error: %1$s</string>
 </resources>

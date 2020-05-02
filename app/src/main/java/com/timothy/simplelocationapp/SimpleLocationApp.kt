@@ -1,6 +1,7 @@
 package com.timothy.simplelocationapp
 
 import android.app.Application
+import com.timothy.simplelocationapp.di.component.ApplicationComponent
 import com.timothy.simplelocationapp.di.component.DaggerApplicationComponent
 import com.timothy.simplelocationapp.di.module.ApplicationModule
 import timber.log.Timber
@@ -11,7 +12,7 @@ import timber.log.Timber
  */
 class SimpleLocationApp : Application() {
 
-    val applicationComponent by lazy {
+    val applicationComponent: ApplicationComponent by lazy {
         DaggerApplicationComponent.builder()
             .applicationModule(ApplicationModule(this))
             .build()

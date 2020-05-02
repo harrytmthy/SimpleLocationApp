@@ -13,6 +13,6 @@ interface LocationContract {
 
     interface View {
         fun onLocationUpdateSuccess(latLong: String)
-        fun onLocationUpdateError()
+        fun onLocationUpdateError(message: String)
     }
 }
