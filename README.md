@@ -7,8 +7,7 @@
 * [Technologies](#technologies)
 
 ## Introduction
-&nbsp;
-[![Screenshot-1588411788.png](https://i.postimg.cc/nr8BKsyv/Screenshot-1588411788.png)](https://postimg.cc/mzwPBr2D)&nbsp; &nbsp; [![Screenshot-1588411575.png](https://i.postimg.cc/g0JVGby6/Screenshot-1588411575.png)](https://postimg.cc/cvpgcjbs)
+[![Screenshot-1588411575.png](https://i.postimg.cc/g0JVGby6/Screenshot-1588411575.png)](https://postimg.cc/cvpgcjbs)
 
 SimpleLocationApp is a demo app to show **A Clean Approach  to Request Location Updates using ReactiveX + Dagger 2**, which we use in DANA.
 
